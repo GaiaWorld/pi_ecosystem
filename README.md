@@ -7,9 +7,9 @@
 |链接|维护者|概述|说明|
 |--|--|--|--|
 |[pi_ecs](https://github.com/GaiaWorld/pi_ecs)|wzjsun(suncy)|ECS 框架||
-|[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|新 渲染|没推到 crates.io|
-|[pi_show](https://github.com/GaiaWorld/pi_show)|wzjsun(suncy)|旧 GUI|没推到 crates.io|
-|[pi_math](https://github.com/GaiaWorld/pi_math)|wzjsun(suncy)|四叉树，八叉树，AABB，OOB 等|没推到 crates.io|
+|[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|新渲染|没推到 crates.io|
+|[pi_show](https://github.com/GaiaWorld/pi_show)|wzjsun(suncy)|旧 GUI，项目一直会用|没推到 crates.io|
+|[pi_math](https://github.com/GaiaWorld/pi_math)|wzjsun(suncy)|旧 数学库，逐渐 放弃 维护|没推到 crates.io|
 
 ### 后端相关
 
@@ -43,6 +43,7 @@
 |[pi_js_proxy_gen_macro](https://github.com/GaiaWorld/pi_js_proxy_gen_macro)|zuon|rust和js的自动生成代码库|之后不开源，没推到 crates.io|
 |[pi_graph](https://github.com/GaiaWorld/pi_graph)|moyy||
 |[pi_async_graph](https://github.com/GaiaWorld/pi_async_graph)|moyy||
+|[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|wzjsun(suncy)|四叉、八叉树||
 |[pi_densevec](https://github.com/GaiaWorld/pi_densevec)|wzjsun(suncy)|管理slab分配id的数据结构，当id稀疏时候使用|配套 slab一起使用|
 |[pi_ordmap](https://github.com/GaiaWorld/pi_ordmap)|wzjsun(suncy)|||
 |[pi_any](https://github.com/GaiaWorld/pi_any)|wzjsun(suncy)|Trait Object的向下造型|当参数是多态，但是某种场景有需要具体类型的时候|
