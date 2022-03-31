@@ -154,7 +154,6 @@
 |[pi_spine](http://192.168.31.241:10082/tech/pi_spine)|baip||js项目|
 |[pi_animation](http://192.168.31.241:10082/tech/pi_animation)|baip|动画模块|js项目|
 |[pi_animation_rust](http://192.168.31.241:10082/tech/pi_animation_rust)|baip|动画模块|rust项目|
-|[pi_ai](http://192.168.31.241:10082/tech/pi_ai)|baip|游戏AI逻辑，例如 寻路 等|rust项目|
 
 #### 平台：Android & iOS & Windows
 
