@@ -114,7 +114,7 @@
 |[pi_base](https://github.com/GaiaWorld/pi_base)|废弃|js项目|
 |[pi_front](https://github.com/GaiaWorld/pi_front)|废弃|js项目|
 |[pi_tools](https://github.com/GaiaWorld/pi_tools)|废弃|js项目|
-|[pi_serv](https://github.com/GaiaWorld/pi_serv)|废弃|rust项目，已经移到 Github|
+|[pi_serv](https://github.com/GaiaWorld/pi_serv)|废弃|rust项目，迁移回 内网 Gitlab|
 |[pi_msdf_tool](https://github.com/GaiaWorld/pi_msdf_tool)|废弃|js项目|
 
 ## 附录：内网 GitLab 项目，不会 发布到 npm 或 crates.io
