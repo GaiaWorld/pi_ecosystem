@@ -123,11 +123,11 @@
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
-|[pi_demo](http://192.168.31.241:10082/tech/pi_demo)|yuq||js项目|
+|[pi_demo](http://192.168.31.241:10082/tech/pi_demo)|limh||js项目|
 |[pi_build](http://192.168.31.241:10082/tech/pi_build)|yuq||js项目|
 |[pi_sys](http://192.168.31.241:10082/tech/pi_sys)|yuq||js项目|
-|[pi_utils](http://192.168.31.241:10082/tech/pi_utils)|yuq / limh||js项目|
-|[pi_commom](http://192.168.31.241:10082/tech/pi_common)|yuq / limh||js项目|
+|[pi_utils](http://192.168.31.241:10082/tech/pi_utils)|limh||js项目|
+|[pi_commom](http://192.168.31.241:10082/tech/pi_common)|limh||js项目|
 |[pi_pt](http://192.168.31.241:10082/tech/pi_pt)|luob||js项目|
 
 #### 服务器端
