@@ -28,8 +28,8 @@
 |[pi_lfstack](https://github.com/GaiaWorld/pi_lfstack)|zuon|||
 |[pi_time](https://github.com/GaiaWorld/pi_time)|luob|||
 |[pi_gray](https://github.com/GaiaWorld/pi_gray)|luob|||
-|[pi_guid](https://github.com/GaiaWorld/pi_guid)|luob|基于时间的全局唯一id||
-|[pi_guid64](https://github.com/GaiaWorld/pi_guid64)|luob|基于时间的全局唯一id||
+|[pi_guid](https://github.com/GaiaWorld/pi_guid)|luob|基于时间的全局唯一id，128位-16字节||
+|[pi_guid64](https://github.com/GaiaWorld/pi_guid64)|luob|基于时间的全局唯一id，64位-8字节||
 |[pi_compress](https://github.com/GaiaWorld/pi_compress)|luob|封装各种压缩库|目前只封装了：`lz4`|
 |[pi_timer](https://github.com/GaiaWorld/pi_timer)|baip|基于wheel的定时轮 实现的 定时器||
 |[pi_rt_file](https://github.com/GaiaWorld/pi_rt_file)|zhuyijiang(zhuy)||
