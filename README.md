@@ -87,37 +87,7 @@
 |[pi_wtree](https://github.com/GaiaWorld/pi_wtree)|wzjsun(suncy)|||
 |[pi_wy_rng](https://github.com/GaiaWorld/pi_wy_rng)|wzjsun(suncy)|||
 
-## 不计划 维护
-
-|链接|维护者|说明|
-|--|--|--|
-|[pi_apm](https://github.com/GaiaWorld/pi_apm)|zuon|没人使用，没推到 crates.io|
-|[pi_future](https://github.com/GaiaWorld/pi_future)|zuon|没人使用，没推到 crates.io|
-|[pi_handler](https://github.com/GaiaWorld/pi_handler)|zuon|没人使用，没推到 crates.io|
-|[pi_worker](https://github.com/GaiaWorld/pi_worker)|zuon|没人使用，没推到 crates.io|
-|[pi_ecs_derive_old](https://github.com/GaiaWorld/pi_ecs_derive_old)|wzjsun(suncy)|暂时维护，pi_show还在使用|
-|[pi_ecs_old](https://github.com/GaiaWorld/pi_ecs_old)|wzjsun(suncy)|暂时维护，pi_show还在使用|
-|[pi_flex_layout_old](https://github.com/GaiaWorld/pi_flex_layout_old)|wzjsun(suncy)|暂时维护，pi_show 还在使用|
-|[pi_data_view](https://github.com/GaiaWorld/pi_data_view)|wzjsun(suncy)|暂时维护，pi_show 还在使用|
-|[pi_adler32](https://github.com/GaiaWorld/pi_adler32)|不维护||
-|[pi_bincode](https://github.com/GaiaWorld/pi_bincode)|不维护||
-|[pi_hashmap](https://github.com/GaiaWorld/pi_hashmap)|不维护|没推到 crates.io|
-|[pi_idtree_old](https://github.com/GaiaWorld/pi_idtree_old)|不维护|没推到 crates.io|
-|[pi_map_old](https://github.com/GaiaWorld/pi_map_old)|不维护|没推到 crates.io|
-|[pi_slab_old](https://github.com/GaiaWorld/pi_slab_old)|不维护|没推到 crates.io|
-|[pi_fx_hashmap](https://github.com/GaiaWorld/pi_fx_hashmap)|不维护|没推到 crates.io|
-|[pi_wy_hash](https://github.com/GaiaWorld/pi_wy_hash)|不维护|没推到 crates.io|
-|[pi_task_pool](https://github.com/GaiaWorld/pi_task_pool)|不维护|没推到 crates.io|
-|[pi_lib](https://github.com/GaiaWorld/pi_lib)|废弃|js项目|
-|[pi_sys](https://github.com/GaiaWorld/pi_sys)|废弃|js项目|
-|[pi_p2p](https://github.com/GaiaWorld/pi_p2p)|废弃|rust项目|
-|[pi_base](https://github.com/GaiaWorld/pi_base)|废弃|js项目|
-|[pi_front](https://github.com/GaiaWorld/pi_front)|废弃|js项目|
-|[pi_tools](https://github.com/GaiaWorld/pi_tools)|废弃|js项目|
-|[pi_serv](https://github.com/GaiaWorld/pi_serv)|废弃|rust项目，迁移回 内网 Gitlab|
-|[pi_msdf_tool](https://github.com/GaiaWorld/pi_msdf_tool)|废弃|js项目|
-
-## 附录：内网 GitLab 项目，不会 发布到 npm 或 crates.io
+## 附录一：内网 GitLab 项目，不会 发布到 npm 或 crates.io
 
 #### 游戏
 
@@ -178,3 +148,34 @@
 |[rust-crypto](http://192.168.31.241:10082/tech/rust-crypto)|zhuyijiang(zhuy)|加密库|适配iOS无法编译链接问题||
 |[font_kit](http://192.168.31.241:10082/tech/font_kit)|zhuyijiang(zhuy)|字体库|freetype_sys 的 canvas2d 封装|
 |[freetype_sys](http://192.168.31.241:10082/tech/freetype_sys)|zhuyijiang(zhuy)|C代码的Rust绑定|从官网的2.6.5升级到2.10.4 & 添加了更多的Rust接口||
+
+## 附录二：不计划 维护
+
+|链接|维护者|说明|
+|--|--|--|
+|[pi_apm](https://github.com/GaiaWorld/pi_apm)|zuon|没人使用，没推到 crates.io|
+|[pi_future](https://github.com/GaiaWorld/pi_future)|zuon|没人使用，没推到 crates.io|
+|[pi_handler](https://github.com/GaiaWorld/pi_handler)|zuon|没人使用，没推到 crates.io|
+|[pi_worker](https://github.com/GaiaWorld/pi_worker)|zuon|没人使用，没推到 crates.io|
+|[pi_ecs_derive_old](https://github.com/GaiaWorld/pi_ecs_derive_old)|wzjsun(suncy)|暂时维护，pi_show还在使用|
+|[pi_ecs_old](https://github.com/GaiaWorld/pi_ecs_old)|wzjsun(suncy)|暂时维护，pi_show还在使用|
+|[pi_flex_layout_old](https://github.com/GaiaWorld/pi_flex_layout_old)|wzjsun(suncy)|暂时维护，pi_show 还在使用|
+|[pi_data_view](https://github.com/GaiaWorld/pi_data_view)|wzjsun(suncy)|暂时维护，pi_show 还在使用|
+|[pi_adler32](https://github.com/GaiaWorld/pi_adler32)|不维护||
+|[pi_bincode](https://github.com/GaiaWorld/pi_bincode)|不维护||
+|[pi_hashmap](https://github.com/GaiaWorld/pi_hashmap)|不维护|没推到 crates.io|
+|[pi_idtree_old](https://github.com/GaiaWorld/pi_idtree_old)|不维护|没推到 crates.io|
+|[pi_map_old](https://github.com/GaiaWorld/pi_map_old)|不维护|没推到 crates.io|
+|[pi_slab_old](https://github.com/GaiaWorld/pi_slab_old)|不维护|没推到 crates.io|
+|[pi_fx_hashmap](https://github.com/GaiaWorld/pi_fx_hashmap)|不维护|没推到 crates.io|
+|[pi_wy_hash](https://github.com/GaiaWorld/pi_wy_hash)|不维护|没推到 crates.io|
+|[pi_task_pool](https://github.com/GaiaWorld/pi_task_pool)|不维护|没推到 crates.io|
+|[pi_lib](https://github.com/GaiaWorld/pi_lib)|废弃|js项目|
+|[pi_sys](https://github.com/GaiaWorld/pi_sys)|废弃|js项目|
+|[pi_p2p](https://github.com/GaiaWorld/pi_p2p)|废弃|rust项目|
+|[pi_base](https://github.com/GaiaWorld/pi_base)|废弃|js项目|
+|[pi_front](https://github.com/GaiaWorld/pi_front)|废弃|js项目|
+|[pi_tools](https://github.com/GaiaWorld/pi_tools)|废弃|js项目|
+|[pi_serv](https://github.com/GaiaWorld/pi_serv)|废弃|rust项目，迁移回 内网 Gitlab|
+|[pi_msdf_tool](https://github.com/GaiaWorld/pi_msdf_tool)|废弃|js项目|
+|[pi_ai](http://192.168.31.241:10082/tech/pi_ai)|废弃|rust项目，以废弃，改为 pi_path_finding|
