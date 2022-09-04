@@ -9,7 +9,8 @@
 |[pi_ecs](https://github.com/GaiaWorld/pi_ecs)|wzjsun(suncy)|ECS 框架||
 |[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|基于 wgpu 和 pi_ecs 的 渲染||
 |[pi_path_finding](https://github.com/GaiaWorld/pi_path_finding)|baip|寻路算法：A*，JPS||
-|[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|rust项目|
+|[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|
+|[pi_animation](https://github.com/GaiaWorld/pi_curves)|baip|曲线模块||
 |[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|wzjsun(suncy)|四叉、八叉树||
 |[pi_math](https://github.com/GaiaWorld/pi_math)|wzjsun(suncy)|旧 数学库，逐渐 放弃 维护|没推到 crates.io|
 |[pi_show](https://github.com/GaiaWorld/pi_show)|wzjsun(suncy)|旧 GUI，项目一直会用|没推到 crates.io|
