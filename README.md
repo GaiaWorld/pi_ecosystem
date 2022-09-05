@@ -7,13 +7,12 @@
 |链接|维护者|概述|说明|
 |--|--|--|--|
 |[pi_ecs](https://github.com/GaiaWorld/pi_ecs)|wzjsun(suncy)|ECS 框架||
-|[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|基于 wgpu 和 pi_ecs 的 渲染||
-|[pi_path_finding](https://github.com/GaiaWorld/pi_path_finding)|baip|寻路算法：A*，JPS||
-|[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|
+|[pi_scene](https://github.com/GaiaWorld/pi_scene)|baip|3D 场景||
 |[pi_curves](https://github.com/GaiaWorld/pi_curves)|baip|曲线模块||
-|[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|wzjsun(suncy)|四叉、八叉树||
-|[pi_math](https://github.com/GaiaWorld/pi_math)|wzjsun(suncy)|旧 数学库，逐渐 放弃 维护|没推到 crates.io|
-|[pi_show](https://github.com/GaiaWorld/pi_show)|wzjsun(suncy)|旧 GUI，项目一直会用|没推到 crates.io|
+|[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|
+|[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|基于 wgpu 渲染|
+|[pi_path_finding](https://github.com/GaiaWorld/pi_path_finding)|moyy|A* 寻路算法||
+|[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|zmax|四叉、八叉树||
 
 ### 后端相关
 
@@ -153,6 +152,8 @@
 
 |链接|维护者|说明|
 |--|--|--|
+|[pi_math](https://github.com/GaiaWorld/pi_math)|wzjsun(suncy)|旧 数学库，逐渐 放弃 维护|没推到 crates.io|
+|[pi_show](https://github.comGaiaWorld/pi_show)|wzjsun(suncy)|旧 GUI，逐渐 放弃 维护|没推到 crates.io|
 |[pi_apm](https://github.com/GaiaWorld/pi_apm)|zuon|没人使用，没推到 crates.io|
 |[pi_future](https://github.com/GaiaWorld/pi_future)|zuon|没人使用，没推到 crates.io|
 |[pi_handler](https://github.com/GaiaWorld/pi_handler)|zuon|没人使用，没推到 crates.io|
