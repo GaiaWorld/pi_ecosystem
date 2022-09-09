@@ -7,6 +7,7 @@
 |链接|维护者|概述|说明|
 |--|--|--|--|
 |[pi_ecs](https://github.com/GaiaWorld/pi_ecs)|wzjsun(suncy)|ECS 框架||
+|[pi_ui_render](https://github.com/GaiaWorld/pi_ui_render)|wzjsun(suncy)|GUI 库||
 |[pi_scene](https://github.com/GaiaWorld/pi_scene)|baip|3D 场景||
 |[pi_curves](https://github.com/GaiaWorld/pi_curves)|baip|曲线模块||
 |[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|
