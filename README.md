@@ -2,34 +2,34 @@
 
 ## [crates.io 的 pi库](https://crates.io/teams/github:gaiaworld:dev)
 
-### 前端相关
+### 客户端相关
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
-|[pi_ecs](https://github.com/GaiaWorld/pi_ecs)|wzjsun(suncy)|ECS 框架||
-|[pi_ui_render](https://github.com/GaiaWorld/pi_ui_render)|wzjsun(suncy)|GUI 库||
-|[pi_scene](https://github.com/GaiaWorld/pi_scene)|baip|3D 场景||
-|[pi_curves](https://github.com/GaiaWorld/pi_curves)|baip|曲线模块||
-|[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|
-|[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|基于 wgpu 渲染|
+|[pi_ecs](https://github.com/GaiaWorld/pi_ecs)|wzjsun(suncy)|类似 Bevy 的 ECS（Entity-Component-System）库，处理客户端数据存和流程的基本框架，可以轻松写并发代码||
+|[pi_ui_render](https://github.com/GaiaWorld/pi_ui_render)|wzjsun(suncy)|浏览器 DOM + CSS 子集 的 Rust 实现，基于ECS；包括：Flex和绝对定位布局，动画，深度，效果，变换，滚动，渲染等功能||
+|[pi_scene](https://github.com/GaiaWorld/pi_scene)|baip|（正在开发）以 Babylon.js/Unity为参考的3D游戏场景渲染||
+|[pi_curves](https://github.com/GaiaWorld/pi_curves)|baip|曲线模块|包括：缓动曲线，Hermite曲线，贝塞尔曲线 等的计算|
+|[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|包括：动画，动画组控制，动画融合 等共鞥你|
+|[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|基于WebGPU的Rust库（wgpu-rs）实现的，以 渲染图 为基础的 渲染基础库，供 ui-render, pi_scene 使用|
 |[pi_path_finding](https://github.com/GaiaWorld/pi_path_finding)|moyy|A* 寻路算法||
-|[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|zmax|四叉、八叉树||
+|[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|zmax|空间搜索树，主要是：四叉树、八叉树 实现||
 
-### 后端相关
+### 服务器端相关
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
 |[pi_crypto](https://github.com/GaiaWorld/pi_crypto)|zuon|加密解密 & 数据签名|没推到 crates.io|
-|[pi_vm](https://github.com/GaiaWorld/pi_vm)|zuon||没推到 crates.io|
-|[pi_store](https://github.com/GaiaWorld/pi_store)|zuon|数据存储|没推到 crates.io|
+|[pi_vm](https://github.com/GaiaWorld/pi_vm)|zuon|JavaScript引擎，v8虚拟机的rust封装|没推到 crates.io|
+|[pi_store](https://github.com/GaiaWorld/pi_store)|zuon|基于日志的数据存储|没推到 crates.io|
 |[pi_db](https://github.com/GaiaWorld/pi_db)|zuon|数据库|没推到 crates.io|
 |[pi_net](https://github.com/GaiaWorld/pi_net)|zuon|网络 `mqtt` & `rpc` & `httpc`|没推到 crates.io|
-|[pi_async](https://github.com/GaiaWorld/pi_async)|zuon|||
-|[pi_async_file](https://github.com/GaiaWorld/pi_async_file)|zuon|||
-|[pi_async_macro](https://github.com/GaiaWorld/pi_async_macro)|zuon|||
-|[pi_lfstack](https://github.com/GaiaWorld/pi_lfstack)|zuon|||
-|[pi_time](https://github.com/GaiaWorld/pi_time)|luob|||
-|[pi_gray](https://github.com/GaiaWorld/pi_gray)|luob|||
+|[pi_async](https://github.com/GaiaWorld/pi_async)|zuon|rust异步运行时的执行库，前后端通用的 底层异步框架||
+|[pi_async_file](https://github.com/GaiaWorld/pi_async_file)|zuon|基于异步运行时库实现的文件操作，比如：读写文件，创建文件，读写目录 等||
+|[pi_async_macro](https://github.com/GaiaWorld/pi_async_macro)|zuon|异步运行时 相关的 宏，配合 pi_async 使用||
+|[pi_lfstack](https://github.com/GaiaWorld/pi_lfstack)|zuon|略||
+|[pi_time](https://github.com/GaiaWorld/pi_time)|luob|实用库：读取系统时间||
+|[pi_gray](https://github.com/GaiaWorld/pi_gray)|luob|版本灰度的简单实现||
 |[pi_guid](https://github.com/GaiaWorld/pi_guid)|luob|基于时间的全局唯一id，128位-16字节||
 |[pi_guid64](https://github.com/GaiaWorld/pi_guid64)|luob|基于时间的全局唯一id，64位-8字节||
 |[pi_compress](https://github.com/GaiaWorld/pi_compress)|luob|封装各种压缩库|目前只封装了：`lz4`|
