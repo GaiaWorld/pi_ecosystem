@@ -22,10 +22,12 @@
 |[pi_crypto](https://github.com/GaiaWorld/pi_crypto)|zuon|加密解密 & 数据签名|没推到 crates.io|
 |[pi_vm](https://github.com/GaiaWorld/pi_vm)|zuon|JavaScript引擎，v8虚拟机的rust封装|没推到 crates.io|
 |[pi_store](https://github.com/GaiaWorld/pi_store)|zuon|基于日志的数据存储|没推到 crates.io|
+|[pi_rt_store](https://github.com/GaiaWorld/pi_rt_store)|zhuyijiang(zhuy)|async store 的封装，添加了多线程竞争排序|
 |[pi_db](https://github.com/GaiaWorld/pi_db)|zuon|数据库|没推到 crates.io|
 |[pi_net](https://github.com/GaiaWorld/pi_net)|zuon|网络 `mqtt` & `rpc` & `httpc`|没推到 crates.io|
 |[pi_async](https://github.com/GaiaWorld/pi_async)|zuon|rust异步运行时的执行库，前后端通用的 底层异步框架||
 |[pi_async_file](https://github.com/GaiaWorld/pi_async_file)|zuon|基于异步运行时库实现的文件操作，比如：读写文件，创建文件，读写目录 等||
+|[pi_rt_file](https://github.com/GaiaWorld/pi_rt_file)|zhuyijiang(zhuy)|async file 的封装，添加了多线程竞争排序|
 |[pi_async_macro](https://github.com/GaiaWorld/pi_async_macro)|zuon|异步运行时 相关的 宏，配合 pi_async 使用||
 |[pi_lfstack](https://github.com/GaiaWorld/pi_lfstack)|zuon|略||
 |[pi_time](https://github.com/GaiaWorld/pi_time)|luob|实用库：读取系统时间||
@@ -34,8 +36,6 @@
 |[pi_guid64](https://github.com/GaiaWorld/pi_guid64)|luob|基于时间的全局唯一id，64位-8字节||
 |[pi_compress](https://github.com/GaiaWorld/pi_compress)|luob|封装各种压缩库|目前只封装了：`lz4`|
 |[pi_timer](https://github.com/GaiaWorld/pi_timer)|baip|基于wheel的定时轮 实现的 定时器||
-|[pi_rt_file](https://github.com/GaiaWorld/pi_rt_file)|zhuyijiang(zhuy)||
-|[pi_rt_store](https://github.com/GaiaWorld/pi_rt_store)|zhuyijiang(zhuy)||
 |[pi_file](https://github.com/GaiaWorld/pi_file)|zhuyijiang(zhuy)||
 |[pi_weight_task](https://github.com/GaiaWorld/pi_weight_task)|zhuyijiang(zhuy)|任务池||
 
