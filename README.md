@@ -1,5 +1,17 @@
 # [pi库 生态](https://github.com/GaiaWorld/pi_ecosystem)
 
+## 层次 概述
+
+### 客户端
+
+![](img/01.png)
+
+![](img/02.png)
+
+![](img/03.png)
+
+### 服务器
+
 ## [crates.io 的 pi库](https://crates.io/teams/github:gaiaworld:dev)
 
 ### 客户端相关
