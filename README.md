@@ -33,10 +33,13 @@
 |[pi_scene](https://github.com/GaiaWorld/pi_scene)|baip|（正在开发）以 Babylon.js/Unity为参考的3D游戏场景渲染||
 |[pi_curves](https://github.com/GaiaWorld/pi_curves)|baip|曲线模块|包括：缓动曲线，Hermite曲线，贝塞尔曲线 等的计算|
 |[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|包括：动画，动画组控制，动画融合 等共鞥你|
+|[pi_3d](https://github.com/GaiaWorld/pi_3d)|baip|3D渲染相关|
+|[pi_3d_loader](https://github.com/GaiaWorld/pi_3d_loader)|baip|3D加载，比如 gltf|
+|[pi_spine_rs](https://github.com/GaiaWorld/pi_spine_rs)|baip|Spine的Rust渲染|
 |[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|基于WebGPU的Rust库（wgpu-rs）实现的，以 渲染图 为基础的 渲染基础库，供 ui-render, pi_scene 使用|
 |[pi_path_finding](https://github.com/GaiaWorld/pi_path_finding)|moyy|A* 寻路算法||
 |[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|zmax|空间搜索树，主要是：四叉树、八叉树 实现||
-
+ 
 ### 服务器端相关
 
 |链接|维护者|概述|说明|
