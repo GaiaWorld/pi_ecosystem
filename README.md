@@ -70,6 +70,19 @@
 
 ## 基础库
 
+注，遇到如下数据结构，要使用这里的库，代替 基础库
+
+|数据结构|库|
+|--|--|
+|`HashMap` / `HashSet`|pi_hash|
+|`rng`:*|pi_wy_rng|
+|`Rc` / `Arc` / `Refcell` / `Atomic*`|pi_share|
+|`Heap`|pi_heap_ext|
+|`Deque`|pi_slot_deque|
+|缓存|pi_lru|
+
+### 库 信息表
+
 |链接|维护者|概述|说明|
 |--|--|--|--|
 |[pi_assets](https://github.com/GaiaWorld/pi_assets)|zmax|资源管理器|||
