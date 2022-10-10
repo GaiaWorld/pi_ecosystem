@@ -1,52 +1,28 @@
+- [pi库 生态](#pi库-生态)
+  - [1. crates.io 的 pi库](#1-cratesio-的-pi库)
+    - [1.1. 基础库](#11-基础库)
+      - [1.1.1. 库 信息表](#111-库-信息表)
+    - [1.2. 客户端](#12-客户端)
+    - [1.3. 服务器端](#13-服务器端)
+  - [2. 附录一：内网 GitLab 项目，不会 发布到 npm 或 crates.io](#2-附录一内网-gitlab-项目不会-发布到-npm-或-cratesio)
+    - [2.1. 游戏](#21-游戏)
+    - [2.2. 服务器端](#22-服务器端)
+    - [2.3. 渲染 & 游戏底层](#23-渲染--游戏底层)
+    - [2.4. 平台：Android & iOS & Windows](#24-平台android--ios--windows)
+    - [2.5. 修改的 第三方库](#25-修改的-第三方库)
+  - [3. 附录二：不计划 维护](#3-附录二不计划-维护)
+  - [4. 附录三：层次 概述](#4-附录三层次-概述)
+    - [4.1. 客户端](#41-客户端)
+      - [4.1.1. 引擎：GUI & 3D](#411-引擎gui--3d)
+      - [4.1.2. 平台底层：APK & Exe](#412-平台底层apk--exe)
+      - [4.1.3. 平台封装 & 项目工具](#413-平台封装--项目工具)
+    - [4.2. 服务器](#42-服务器)
+
 # [pi库 生态](https://github.com/GaiaWorld/pi_ecosystem)
 
-## [crates.io 的 pi库](https://crates.io/teams/github:gaiaworld:dev)
+## 1. [crates.io 的 pi库](https://crates.io/teams/github:gaiaworld:dev)
 
-### 客户端相关
-
-|链接|维护者|概述|说明|
-|--|--|--|--|
-|[pi_flex_layout](https://github.com/GaiaWorld/pi_flex_layout)|zmax|GUI-Flex布局||
-|[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|zmax|空间搜索树，主要是：四叉树、八叉树 实现||
-|[pi_ecs](https://github.com/GaiaWorld/pi_ecs)|wzjsun(suncy)|类似 Bevy 的 ECS（Entity-Component-System）库，处理客户端数据存和流程的基本框架，可以轻松写并发代码||
-|[pi_ui_render](https://github.com/GaiaWorld/pi_ui_render)|wzjsun(suncy)|浏览器 DOM + CSS 子集 的 Rust 实现，基于ECS；包括：Flex和绝对定位布局，动画，深度，效果，变换，滚动，渲染等功能||
-|[pi_scene](https://github.com/GaiaWorld/pi_scene)|baip|（正在开发）以 Babylon.js/Unity为参考的3D游戏场景渲染||
-|[pi_curves](https://github.com/GaiaWorld/pi_curves)|baip|曲线模块|包括：缓动曲线，Hermite曲线，贝塞尔曲线 等的计算|
-|[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|包括：动画，动画组控制，动画融合 等共鞥你|
-|[pi_3d](https://github.com/GaiaWorld/pi_3d)|baip|3D渲染相关|
-|[pi_3d_loader](https://github.com/GaiaWorld/pi_3d_loader)|baip|3D加载，比如 gltf|
-|[pi_spine_rs](https://github.com/GaiaWorld/pi_spine_rs)|baip|Spine的Rust渲染|
-|[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|基于WebGPU的Rust库（wgpu-rs）实现的，以 渲染图 为基础的 渲染基础库，供 ui-render, pi_scene 使用|
-|[pi_path_finding](https://github.com/GaiaWorld/pi_path_finding)|moyy|A* 寻路算法||
-
-### 服务器端相关
-
-|链接|维护者|概述|说明|
-|--|--|--|--|
-|[pi_crypto](https://github.com/GaiaWorld/pi_crypto)|zuon|加密解密 & 数据签名|没推到 crates.io|
-|[pi_vm](https://github.com/GaiaWorld/pi_vm)|zuon|JavaScript引擎，v8虚拟机的rust封装|没推到 crates.io|
-|[pi_store](https://github.com/GaiaWorld/pi_store)|zuon|基于日志的数据存储|没推到 crates.io|
-|[pi_rt_store](https://github.com/GaiaWorld/pi_rt_store)|zhuyijiang(zhuy)|`暂时没有实现`|
-|[pi_db](https://github.com/GaiaWorld/pi_db)|zuon|数据库|没推到 crates.io|
-|[pi_net](https://github.com/GaiaWorld/pi_net)|zuon|网络 `mqtt` & `rpc` & `httpc`|没推到 crates.io|
-|[pi_async](https://github.com/GaiaWorld/pi_async)|zuon|rust异步运行时的执行库，前后端通用的 底层异步框架||
-|[pi_async_file](https://github.com/GaiaWorld/pi_async_file)|zuon|基于异步运行时库实现的文件操作，比如：读写文件，创建文件，读写目录 等||
-|[pi_rt_file](https://github.com/GaiaWorld/pi_rt_file)|zhuyijiang(zhuy)|async file 的封装，添加了多线程竞争排序|
-|[pi_async_macro](https://github.com/GaiaWorld/pi_async_macro)|zuon|异步运行时 相关的 宏，配合 pi_async 使用||
-|[pi_lfstack](https://github.com/GaiaWorld/pi_lfstack)|zuon|略||
-|[pi_time](https://github.com/GaiaWorld/pi_time)|luob|实用库：读取系统时间||
-|[pi_gray](https://github.com/GaiaWorld/pi_gray)|luob|版本灰度的简单实现||
-|[pi_guid](https://github.com/GaiaWorld/pi_guid)|luob|基于时间的全局唯一id，128位-16字节||
-|[pi_guid64](https://github.com/GaiaWorld/pi_guid64)|luob|基于时间的全局唯一id，64位-8字节||
-|[pi_compress](https://github.com/GaiaWorld/pi_compress)|luob|封装各种压缩库|目前只封装了：`lz4`|
-|[pi_timer](https://github.com/GaiaWorld/pi_timer)|baip|基于wheel的定时轮 实现的 定时器||
-|[pi_file](https://github.com/GaiaWorld/pi_file)|zhuyijiang(zhuy)||
-|[pi_weight_task](https://github.com/GaiaWorld/pi_weight_task)|zhuyijiang(zhuy)|任务池，基于优先级的任务调度器||
-|[pi_local_timer](https://github.com/GaiaWorld/pi_local_timer)|wzjsun(suncy)|任务轮实现的延时定时器||
-|[pi_cancel_timer](https://github.com/GaiaWorld/pi_cancel_timer)|wzjsun(suncy)|可取消的定时器||
-|[pi_rsync](https://github.com/GaiaWorld/pi_rsync)|wzjsun(suncy)|文件rsync同步的实现|目前没用|
-
-## 基础库
+### 1.1. 基础库
 
 注，遇到如下数据结构，要使用这里的库，代替 基础库
 
@@ -59,7 +35,7 @@
 |`Deque`|std::collections::Deque|pi_slot_deque|
 |缓存|pi_lru|
 
-### 库 信息表
+#### 1.1.1. 库 信息表
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
@@ -87,10 +63,53 @@
 |[pi_lru](https://github.com/GaiaWorld/pi_lru)|wzjsun(suncy)|LRU缓存算法||
 |`性能不高，有待优化` [pi_static_map](https://github.com/GaiaWorld/pi_static_map)|wzjsun(suncy)|完美静态哈希 的 实现||
 
+### 1.2. 客户端
 
-## 附录一：内网 GitLab 项目，不会 发布到 npm 或 crates.io
+|链接|维护者|概述|说明|
+|--|--|--|--|
+|[pi_flex_layout](https://github.com/GaiaWorld/pi_flex_layout)|zmax|GUI-Flex布局||
+|[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|zmax|空间搜索树，主要是：四叉树、八叉树 实现||
+|[pi_ecs](https://github.com/GaiaWorld/pi_ecs)|wzjsun(suncy)|类似 Bevy 的 ECS（Entity-Component-System）库，处理客户端数据存和流程的基本框架，可以轻松写并发代码||
+|[pi_ui_render](https://github.com/GaiaWorld/pi_ui_render)|wzjsun(suncy)|浏览器 DOM + CSS 子集 的 Rust 实现，基于ECS；包括：Flex和绝对定位布局，动画，深度，效果，变换，滚动，渲染等功能||
+|[pi_scene](https://github.com/GaiaWorld/pi_scene)|baip|（正在开发）以 Babylon.js/Unity为参考的3D游戏场景渲染||
+|[pi_curves](https://github.com/GaiaWorld/pi_curves)|baip|曲线模块|包括：缓动曲线，Hermite曲线，贝塞尔曲线 等的计算|
+|[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|包括：动画，动画组控制，动画融合 等共鞥你|
+|[pi_3d](https://github.com/GaiaWorld/pi_3d)|baip|3D渲染相关|
+|[pi_3d_loader](https://github.com/GaiaWorld/pi_3d_loader)|baip|3D加载，比如 gltf|
+|[pi_spine_rs](https://github.com/GaiaWorld/pi_spine_rs)|baip|Spine的Rust渲染|
+|[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|基于WebGPU的Rust库（wgpu-rs）实现的，以 渲染图 为基础的 渲染基础库，供 ui-render, pi_scene 使用|
+|[pi_path_finding](https://github.com/GaiaWorld/pi_path_finding)|moyy|A* 寻路算法||
 
-#### 游戏
+### 1.3. 服务器端
+
+|链接|维护者|概述|说明|
+|--|--|--|--|
+|[pi_crypto](https://github.com/GaiaWorld/pi_crypto)|zuon|加密解密 & 数据签名|没推到 crates.io|
+|[pi_vm](https://github.com/GaiaWorld/pi_vm)|zuon|JavaScript引擎，v8虚拟机的rust封装|没推到 crates.io|
+|[pi_store](https://github.com/GaiaWorld/pi_store)|zuon|基于日志的数据存储|没推到 crates.io|
+|[pi_rt_store](https://github.com/GaiaWorld/pi_rt_store)|zhuyijiang(zhuy)|`暂时没有实现`|
+|[pi_db](https://github.com/GaiaWorld/pi_db)|zuon|数据库|没推到 crates.io|
+|[pi_net](https://github.com/GaiaWorld/pi_net)|zuon|网络 `mqtt` & `rpc` & `httpc`|没推到 crates.io|
+|[pi_async](https://github.com/GaiaWorld/pi_async)|zuon|rust异步运行时的执行库，前后端通用的 底层异步框架||
+|[pi_async_file](https://github.com/GaiaWorld/pi_async_file)|zuon|基于异步运行时库实现的文件操作，比如：读写文件，创建文件，读写目录 等||
+|[pi_rt_file](https://github.com/GaiaWorld/pi_rt_file)|zhuyijiang(zhuy)|async file 的封装，添加了多线程竞争排序|
+|[pi_async_macro](https://github.com/GaiaWorld/pi_async_macro)|zuon|异步运行时 相关的 宏，配合 pi_async 使用||
+|[pi_lfstack](https://github.com/GaiaWorld/pi_lfstack)|zuon|略||
+|[pi_time](https://github.com/GaiaWorld/pi_time)|luob|实用库：读取系统时间||
+|[pi_gray](https://github.com/GaiaWorld/pi_gray)|luob|版本灰度的简单实现||
+|[pi_guid](https://github.com/GaiaWorld/pi_guid)|luob|基于时间的全局唯一id，128位-16字节||
+|[pi_guid64](https://github.com/GaiaWorld/pi_guid64)|luob|基于时间的全局唯一id，64位-8字节||
+|[pi_compress](https://github.com/GaiaWorld/pi_compress)|luob|封装各种压缩库|目前只封装了：`lz4`|
+|[pi_timer](https://github.com/GaiaWorld/pi_timer)|baip|基于wheel的定时轮 实现的 定时器||
+|[pi_file](https://github.com/GaiaWorld/pi_file)|zhuyijiang(zhuy)||
+|[pi_weight_task](https://github.com/GaiaWorld/pi_weight_task)|zhuyijiang(zhuy)|任务池，基于优先级的任务调度器||
+|[pi_local_timer](https://github.com/GaiaWorld/pi_local_timer)|wzjsun(suncy)|任务轮实现的延时定时器||
+|[pi_cancel_timer](https://github.com/GaiaWorld/pi_cancel_timer)|wzjsun(suncy)|可取消的定时器||
+|[pi_rsync](https://github.com/GaiaWorld/pi_rsync)|wzjsun(suncy)|文件rsync同步的实现|目前没用|
+
+## 2. 附录一：内网 GitLab 项目，不会 发布到 npm 或 crates.io
+
+### 2.1. 游戏
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
@@ -101,7 +120,7 @@
 |[pi_commom](http://192.168.31.241:10082/tech/pi_common)|limh|方便项目使用的通用业务逻辑代码封装， 比如：登录，支付等|js项目|
 |[pi_pt](http://192.168.31.241:10082/tech/pi_pt)|luob|后端项目的封装|js项目|
 
-#### 服务器端
+### 2.2. 服务器端
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
@@ -117,7 +136,7 @@
 |[pi_core_lib](http://192.168.31.241:10082/tech/pi_core_lib)|zuon||rust项目|
 |[pi_core_builtin](http://192.168.31.241:10082/tech/pi_core_builtin)|zuon||rust项目|
 
-#### 渲染 & 游戏底层
+### 2.3. 渲染 & 游戏底层
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
@@ -126,7 +145,7 @@
 |[pi_babylon_demo](http://192.168.31.241:10082/tech/pi_babylon_demo)|baip|pi_babylon 和 Babylon 的 Demo|js项目|
 |[pi_spine](http://192.168.31.241:10082/tech/pi_spine)|baip|封装 Spine.js 给项目使用的模块|js项目|
 
-#### 平台：Android & iOS & Windows
+### 2.4. 平台：Android & iOS & Windows
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
@@ -136,7 +155,7 @@
 |[pi_android](http://192.168.31.241:10082/tech/pi_android)|moyy|apk的逻辑，提供 Android Java 底层功能 供 pi_sys 调用|Java项目|
 |[pi_ios](http://192.168.31.241:10082/tech/pi_ios)|moyy||Swift项目|[surfman](http://192.168.31.241:10082/tech/surfman)|zhuy|网上对应库的维护，跨平台的egl 绑定|android 添加 swappy，添加ios eagl 绑定
 
-#### 修改的 第三方库
+### 2.5. 修改的 第三方库
 
 处于某些原因，需要 fork 一份 第三方库的源码 过来，自己维护
 
@@ -150,7 +169,7 @@
 |[font_kit](http://192.168.31.241:10082/tech/font_kit)|zhuyijiang(zhuy)|字体库|freetype_sys 的 canvas2d 封装|
 |[freetype_sys](http://192.168.31.241:10082/tech/freetype_sys)|zhuyijiang(zhuy)|C代码的Rust绑定|从官网的2.6.5升级到2.10.4 & 添加了更多的Rust接口||
 
-## 附录二：不计划 维护
+## 3. 附录二：不计划 维护
 
 现有项目还在用，只是 不会 主动 开发新功能
 
@@ -202,25 +221,24 @@
 |[pi_msdf_tool](https://github.com/GaiaWorld/pi_msdf_tool)|废弃|js项目|
 |[pi_ai](http://192.168.31.241:10082/tech/pi_ai)|废弃|rust项目，以废弃，改为 pi_path_finding|
 
-## 附录三：层次 概述
+## 4. 附录三：层次 概述
 
-### 客户端
+### 4.1. 客户端
 
-#### 引擎：GUI & 3D
+#### 4.1.1. 引擎：GUI & 3D
 
 ![](img/01.png)
 
-#### 平台底层：APK & Exe
+#### 4.1.2. 平台底层：APK & Exe
 
 ![](img/02.png)
 
-#### 平台封装 & 项目工具
+#### 4.1.3. 平台封装 & 项目工具
 
 ![](img/03.png)
 
-### 服务器
+### 4.2. 服务器
 
 + JS：pi_pt
 + Rust：pi_serv
   - 支撑库：pi_async, pi_db, pi_net, pi_store, pi_v8/pi_vm
-
