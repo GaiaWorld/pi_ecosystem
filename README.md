@@ -97,7 +97,6 @@
 |[pi_async_graph](https://github.com/GaiaWorld/pi_async_graph)|moyy|基于 有向循环图 实现的 异步执行图，是 渲染图 和 ECS 调度器的基础数据结构|
 |[pi_any](https://github.com/GaiaWorld/pi_any)|wzjsun(suncy)|Trait Object的向下造型|当参数是多态，但是某种场景有需要具体类型的时候|
 |[pi_null](https://github.com/GaiaWorld/pi_null)|wzjsun(suncy)|定义了一个trait Null, 该trait提供is_null方法用于判空。||
-|[pi_pointer](https://github.com/GaiaWorld/pi_pointer)|wzjsun(suncy)|指针类型，类似Arc、Rc、但会将同类对象分配在一个连续的空间||
 |[pi_slot_deque](https://github.com/GaiaWorld/pi_slot_deque)|wzjsun(suncy)|基于 slot-map 的 双端队列||
 |[pi_slot_wheel](https://github.com/GaiaWorld/pi_slot_wheel)|wzjsun(suncy)|基于 slot-map 的 定时轮||
 |[pi_weight](https://github.com/GaiaWorld/pi_weight)|wzjsun(suncy)|基于 slot-map 的 权重树 用于存储带权重值的内容||
@@ -193,6 +192,7 @@
 |[pi_res](https://github.com/GaiaWorld/pi_res)|wzjsun(suncy)||(pi_utils 还在用) 资源的抽象接口，配合 pi_res_mgr 一起使用||
 |[pi_res_mgr](https://github.com/GaiaWorld/pi_res_mgr)|wzjsun(suncy)|同类型数据管理|(pi_utils 还在用) 需要自己管理空闲块 & 绕过rust引用|
 |[pi_slab](https://github.com/GaiaWorld/pi_slab)|wzjsun(suncy)|基于数组的类似hashmap的快速查找容器||
+|[pi_pointer](https://github.com/GaiaWorld/pi_pointer)|wzjsun(suncy)|指针类型，类似Arc、Rc、但会将同类对象分配在一个连续的空间|基于 pi_slab|
 |[pi_wheel](https://github.com/GaiaWorld/pi_wheel)|wzjsun(suncy)|全部采用常量泛型的多层定时轮||
 |[pi_wtree](https://github.com/GaiaWorld/pi_wtree)|wzjsun(suncy)|权重树 用于存储带权重值的内容||
 |[pi_math](https://github.com/GaiaWorld/pi_math)|wzjsun(suncy)|旧 数学库，逐渐 放弃 维护|没推到 crates.io|
