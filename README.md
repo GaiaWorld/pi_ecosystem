@@ -107,7 +107,9 @@
 |[pi_cancel_timer](https://github.com/GaiaWorld/pi_cancel_timer)|wzjsun(suncy)|可取消的定时器||
 |[pi_rsync](https://github.com/GaiaWorld/pi_rsync)|wzjsun(suncy)|文件rsync同步的实现|目前没用|
 
-## 2. 附录一：内网 GitLab 项目，不会 发布到 npm 或 crates.io
+## 2. 附录一：内网 GitLab 项目
+
+不会 发布到 npm 或 crates.io
 
 ### 2.1. 游戏
 
