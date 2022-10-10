@@ -1,33 +1,13 @@
 # [pi库 生态](https://github.com/GaiaWorld/pi_ecosystem)
 
-## 层次 概述
-
-### 客户端
-
-#### 引擎：GUI & 3D
-
-![](img/01.png)
-
-#### 平台底层：APK & Exe
-
-![](img/02.png)
-
-#### 平台封装 & 项目工具
-
-![](img/03.png)
-
-### 服务器
-
-+ JS：pi_pt
-+ Rust：pi_serv
-  - 支撑库：pi_async, pi_db, pi_net, pi_store, pi_v8/pi_vm
-
 ## [crates.io 的 pi库](https://crates.io/teams/github:gaiaworld:dev)
 
 ### 客户端相关
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
+|[pi_flex_layout](https://github.com/GaiaWorld/pi_flex_layout)|zmax|GUI-Flex布局||
+|[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|zmax|空间搜索树，主要是：四叉树、八叉树 实现||
 |[pi_ecs](https://github.com/GaiaWorld/pi_ecs)|wzjsun(suncy)|类似 Bevy 的 ECS（Entity-Component-System）库，处理客户端数据存和流程的基本框架，可以轻松写并发代码||
 |[pi_ui_render](https://github.com/GaiaWorld/pi_ui_render)|wzjsun(suncy)|浏览器 DOM + CSS 子集 的 Rust 实现，基于ECS；包括：Flex和绝对定位布局，动画，深度，效果，变换，滚动，渲染等功能||
 |[pi_scene](https://github.com/GaiaWorld/pi_scene)|baip|（正在开发）以 Babylon.js/Unity为参考的3D游戏场景渲染||
@@ -38,8 +18,6 @@
 |[pi_spine_rs](https://github.com/GaiaWorld/pi_spine_rs)|baip|Spine的Rust渲染|
 |[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|基于WebGPU的Rust库（wgpu-rs）实现的，以 渲染图 为基础的 渲染基础库，供 ui-render, pi_scene 使用|
 |[pi_path_finding](https://github.com/GaiaWorld/pi_path_finding)|moyy|A* 寻路算法||
-|[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|zmax|空间搜索树，主要是：四叉树、八叉树 实现||
- |[pi_flex_layout](https://github.com/GaiaWorld/pi_flex_layout)|wzjsun(suncy)|GUI-Flex布局||
 
 ### 服务器端相关
 
@@ -223,3 +201,26 @@
 |[pi_serv](https://github.com/GaiaWorld/pi_serv)|废弃|rust项目，迁移回 内网 Gitlab|
 |[pi_msdf_tool](https://github.com/GaiaWorld/pi_msdf_tool)|废弃|js项目|
 |[pi_ai](http://192.168.31.241:10082/tech/pi_ai)|废弃|rust项目，以废弃，改为 pi_path_finding|
+
+## 附录三：层次 概述
+
+### 客户端
+
+#### 引擎：GUI & 3D
+
+![](img/01.png)
+
+#### 平台底层：APK & Exe
+
+![](img/02.png)
+
+#### 平台封装 & 项目工具
+
+![](img/03.png)
+
+### 服务器
+
++ JS：pi_pt
++ Rust：pi_serv
+  - 支撑库：pi_async, pi_db, pi_net, pi_store, pi_v8/pi_vm
+
