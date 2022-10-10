@@ -72,13 +72,13 @@
 
 注，遇到如下数据结构，要使用这里的库，代替 基础库
 
-|数据结构|库|
-|--|--|
-|`HashMap` / `HashSet`|pi_hash|
-|`rng`:*|pi_wy_rng|
-|`Rc` / `Arc` / `Refcell` / `Atomic*`|pi_share|
-|`Heap`|pi_heap_ext|
-|`Deque`|pi_slot_deque|
+|作用 / 数据结构|概念|需要用 的 库|
+|--|--|--|
+|`HashMap` / `HashSet`|哈希表|pi_hash|
+|`rand::*`|随机数|pi_wy_rng|
+|`Rc` / `Arc` / `Refcell` / `Atomic*` / `Mutex` / `RwLock`|共享指针 / 原子计数 / 锁 | pi_share|
+|`Heap`|std::collections::Heap|pi_heap_ext|
+|`Deque`|std::collections::Deque|pi_slot_deque|
 |缓存|pi_lru|
 
 ### 库 信息表
