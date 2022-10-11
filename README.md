@@ -37,7 +37,7 @@
 |`Send + Sync`|pi_share::`ThreadSync`|
 |Rc / Arc|pi_share::Share||
 |RefCell / TrustCell|pi_share::ShareCell||
-|Rc< RefCell > / Arc < TrustCell >)|pi_share::ShareRefCell|
+|Rc< RefCell > / Arc < TrustCell >|pi_share::ShareRefCell|
 |rc/arc::Weak|pi_share::ShareWeak|
 |Mutex|pi_share::ShareMutex|
 |RwLock|pi_share::ShareRwLock|
