@@ -49,7 +49,7 @@
 |[pi_map](https://github.com/GaiaWorld/pi_map)|wzjsun(suncy)|定义了 Map的Trait，为高层数据存储定义了通用方法；并实现了VecMap，基于vec的map实现||
 |[pi_ordmap](https://github.com/GaiaWorld/pi_ordmap)|wzjsun(suncy)|一种保持顺序的map||
 |[pi_graph](https://github.com/GaiaWorld/pi_graph)|moyy|有向循环图的数据结构和接口|
-|[pi_async_graph](https://github.com/GaiaWorld/pi_async_graph)|moyy|基于 有向循环图 实现的 异步执行图，是 渲染图 和 ECS 调度器的基础数据结构|
+|[pi_async_graph](https://github.com/GaiaWorld/pi_async_graph)|moyy|基于 有向循环图 实现的 异步执行图|是 渲染图 和 ECS 调度器的基础数据结构|
 |[pi_atom](https://github.com/GaiaWorld/pi_atom)|wzjsun(suncy)|字符串原子|有很多相同字符串拷来拷去，比如CSS和语言关键字|
 |[pi_any](https://github.com/GaiaWorld/pi_any)|wzjsun(suncy)|Trait Object的向下造型|当参数是多态，但是某种场景有需要具体类型的时候|
 |[pi_null](https://github.com/GaiaWorld/pi_null)|wzjsun(suncy)|定义了一个trait Null, 该trait提供is_null方法用于判空。||
