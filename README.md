@@ -39,7 +39,7 @@
 |RwLock|`pi_share::ShareRwLock`|
 |UnsafeCell|`pi_share::AtomicPtr`|
 |AtomicBool/AtomicU8/AtomicUsize|`pi_share::ShareBool/ShareU8/ShareUsize/`|
-|Arc(TrustCell<T>)|`pi_share::ShareRefCell`|
+|Arc(TrustCell < T >)|`pi_share::ShareRefCell`|
 
 #### 1.1.1. 库 信息表
 
