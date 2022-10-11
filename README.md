@@ -26,16 +26,20 @@
 
 注，遇到如下数据结构，要使用这里的库，代替 基础库
 
-|概念|代替std库的？|说明|
+|std库的？|用下面的？代替|说明|
 |--|--|--|
-|`pi_hash::XHashMap`|`HashMap`||
-|`pi_hash::XHashSet`|`HashSet`||
-|`pi_wy_rng::*`|`rand::*`||
-|`pi_share::Share`|`Rc/Arc`||
-|`pi_share::Atomic`|`Atomic*`||
-|`pi_share::`|`RefCell`||
-|`pi_heap_ext::Heap`|`Heap`||
-|`pi_slot_deque::Deque`|std::collections::Deque||
+|`HashMap`|`pi_hash::XHashMap`||
+|`HashSet`|`pi_hash::XHashSet`||
+|`rand::*`|`pi_wy_rng`||
+|`Heap`|`pi_heap_ext`|`Heap`||
+|`Deque`|`pi_slot_deque`||
+|`Rc` / `Arc`|`pi_share::Share`||
+|rc::Weak / arc::Weak|`pi_share::ShareWeak`|
+|Mutex|`pi_share::ShareMutex`|
+|RwLock|`pi_share::ShareRwLock`|
+|UnsafeCell|`pi_share::AtomicPtr`|
+|AtomicBool/AtomicU8/AtomicUsize|`pi_share::ShareBool/ShareU8/ShareUsize/`|
+|Arc(TrustCell<T>)|`pi_share::ShareRefCell`|
 
 #### 1.1.1. 库 信息表
 
