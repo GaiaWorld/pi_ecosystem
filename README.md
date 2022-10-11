@@ -28,9 +28,9 @@
 
 |std库的？|用下面的？代替|说明|
 |--|--|--|
+|（随机数库，非 std）rand::*|pi_wy_rng||
 |HashMap|pi_hash::`XHashMap`||
 |HashSet|pi_hash::`XHashSet`||
-|rand::*|pi_wy_rng||
 |Heap|pi_heap_ext|||
 |Deque|pi_slot_deque||
 |`Send`|pi_share::`ThreadSend`|
