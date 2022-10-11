@@ -26,14 +26,16 @@
 
 注，遇到如下数据结构，要使用这里的库，代替 基础库
 
-|作用 / 数据结构|概念|需要用 的 库|
+|概念|代替std库的？|说明|
 |--|--|--|
-|`HashMap` / `HashSet`|哈希表|pi_hash|
-|`rand::*`|随机数|pi_wy_rng|
-|`Rc` / `Arc` / `Refcell` / `Atomic*` / `Mutex` / `RwLock`|共享指针 / 原子计数 / 锁 | pi_share|
-|`Heap`|std::collections::Heap|pi_heap_ext|
-|`Deque`|std::collections::Deque|pi_slot_deque|
-|缓存|pi_lru|
+|`pi_hash::XHashMap`|`HashMap`||
+|`pi_hash::XHashSet`|`HashSet`||
+|`pi_wy_rng::*`|`rand::*`||
+|`pi_share::Share`|`Rc/Arc`||
+|`pi_share::Atomic`|`Atomic*`||
+|`pi_share::`|`RefCell`||
+|`pi_heap_ext::Heap`|`Heap`||
+|`pi_slot_deque::Deque`|std::collections::Deque||
 
 #### 1.1.1. 库 信息表
 
@@ -52,15 +54,13 @@
 |[pi_any](https://github.com/GaiaWorld/pi_any)|wzjsun(suncy)|Trait Object的向下造型|当参数是多态，但是某种场景有需要具体类型的时候|
 |[pi_null](https://github.com/GaiaWorld/pi_null)|wzjsun(suncy)|定义了一个trait Null, 该trait提供is_null方法用于判空。||
 |[pi_slot_deque](https://github.com/GaiaWorld/pi_slot_deque)|wzjsun(suncy)|基于 slot-map 的 双端队列||
-|[pi_slot_wheel](https://github.com/GaiaWorld/pi_slot_wheel)|wzjsun(suncy)|基于 slot-map 的 定时轮||
-|[pi_weight](https://github.com/GaiaWorld/pi_weight)|wzjsun(suncy)|基于 slot-map 的 权重树 用于存储带权重值的内容||
 |[pi_cowlist](https://github.com/GaiaWorld/pi_cowlist)|wzjsun(suncy)|写时复制的链表||
-|[pi_sinfo](https://github.com/GaiaWorld/pi_sinfo)|wzjsun(suncy)|用于描述 struct 的 元信息|和 bon 结合使用|
-|[pi_bon](https://github.com/GaiaWorld/pi_bon)|wzjsun(suncy)|序列化和反序列的库|`尽量用serd`|
 |[pi_lru](https://github.com/GaiaWorld/pi_lru)|wzjsun(suncy)|LRU缓存算法||
-|[pi_dirty](https://github.com/GaiaWorld/pi_dirty)|wzjsun(suncy)|可以设置脏，查询脏的容器|目前主要用于 pi_ecs|
+|[pi_weight](https://github.com/GaiaWorld/pi_weight)|wzjsun(suncy)|基于 slot-map 的 权重树 用于存储带权重值的内容|||
 |[pi_util](https://github.com/GaiaWorld/pi_util)|wzjsun(suncy)|实用库：放一些实用函数和结构体||
+|[pi_slot_wheel](https://github.com/GaiaWorld/pi_slot_wheel)|wzjsun(suncy)|基于 slot-map 的 定时轮||
 |`性能不高，有待优化` [pi_static_map](https://github.com/GaiaWorld/pi_static_map)|zmax|完美静态哈希 的 实现||
+|`仅 ECS 内部用` [pi_dirty](https://github.com/GaiaWorld/pi_dirty)|wzjsun(suncy)|可以设置脏，查询脏的容器|目前主要用于 pi_ecs|
 
 ### 1.2. 客户端
 
@@ -83,6 +83,8 @@
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
+|[pi_sinfo](https://github.com/GaiaWorld/pi_sinfo)|wzjsun(suncy)|用于描述 struct 的 元信息|和 bon 结合使用|
+|[pi_bon](https://github.com/GaiaWorld/pi_bon)|wzjsun(suncy)|序列化和反序列的库|主要用途：给前后端通信用的二进制格式|
 |[pi_local_timer](https://github.com/GaiaWorld/pi_local_timer)|wzjsun(suncy)|任务轮实现的延时定时器||
 |[pi_crypto](https://github.com/GaiaWorld/pi_crypto)|zuon|加密解密 & 数据签名|没推到 crates.io|
 |[pi_vm](https://github.com/GaiaWorld/pi_vm)|zuon|JavaScript引擎，v8虚拟机的rust封装|没推到 crates.io|
