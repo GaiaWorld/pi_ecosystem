@@ -46,22 +46,21 @@
 |[pi_ext_heap](https://github.com/GaiaWorld/pi_ext_heap)|zmax|扩展堆，支持删除和修改指定位置的元素，当堆内元素移动时，会调用回调函数|如果没有 删除 和 更新操作，可以考虑用std|
 |[pi_map](https://github.com/GaiaWorld/pi_map)|wzjsun(suncy)|定义了 Map的Trait，为高层数据存储定义了通用方法；并实现了VecMap，基于vec的map实现||
 |[pi_ordmap](https://github.com/GaiaWorld/pi_ordmap)|wzjsun(suncy)|一种保持顺序的map||
-|[pi_atom](https://github.com/GaiaWorld/pi_atom)|wzjsun(suncy)|字符串原子|有很多相同字符串拷来拷去，比如CSS和语言关键字|
 |[pi_graph](https://github.com/GaiaWorld/pi_graph)|moyy|有向循环图的数据结构和接口|
 |[pi_async_graph](https://github.com/GaiaWorld/pi_async_graph)|moyy|基于 有向循环图 实现的 异步执行图，是 渲染图 和 ECS 调度器的基础数据结构|
+|[pi_atom](https://github.com/GaiaWorld/pi_atom)|wzjsun(suncy)|字符串原子|有很多相同字符串拷来拷去，比如CSS和语言关键字|
 |[pi_any](https://github.com/GaiaWorld/pi_any)|wzjsun(suncy)|Trait Object的向下造型|当参数是多态，但是某种场景有需要具体类型的时候|
 |[pi_null](https://github.com/GaiaWorld/pi_null)|wzjsun(suncy)|定义了一个trait Null, 该trait提供is_null方法用于判空。||
 |[pi_slot_deque](https://github.com/GaiaWorld/pi_slot_deque)|wzjsun(suncy)|基于 slot-map 的 双端队列||
 |[pi_slot_wheel](https://github.com/GaiaWorld/pi_slot_wheel)|wzjsun(suncy)|基于 slot-map 的 定时轮||
 |[pi_weight](https://github.com/GaiaWorld/pi_weight)|wzjsun(suncy)|基于 slot-map 的 权重树 用于存储带权重值的内容||
-|[pi_sinfo](https://github.com/GaiaWorld/pi_sinfo)|wzjsun(suncy)|用于描述 struct 的 元信息|和 bon 结合使用|
-|[pi_bon](https://github.com/GaiaWorld/pi_bon)|wzjsun(suncy)|序列化和反序列的库||
-|[pi_ucd](https://github.com/GaiaWorld/pi_ucd)|wzjsun(suncy)|unicode快速查询的函数|比如可以查询某个point是不是中文
 |[pi_util](https://github.com/GaiaWorld/pi_util)|wzjsun(suncy)|实用库：放一些实用函数和结构体||
-|[pi_dirty](https://github.com/GaiaWorld/pi_dirty)|wzjsun(suncy)|可以设置脏，查询脏的容器||
 |[pi_cowlist](https://github.com/GaiaWorld/pi_cowlist)|wzjsun(suncy)|写时复制的链表||
+|[pi_sinfo](https://github.com/GaiaWorld/pi_sinfo)|wzjsun(suncy)|用于描述 struct 的 元信息|和 bon 结合使用|
+|[pi_bon](https://github.com/GaiaWorld/pi_bon)|wzjsun(suncy)|序列化和反序列的库|`尽量用serd`|
 |[pi_lru](https://github.com/GaiaWorld/pi_lru)|wzjsun(suncy)|LRU缓存算法||
-|`性能不高，有待优化` [pi_static_map](https://github.com/GaiaWorld/pi_static_map)|wzjsun(suncy)|完美静态哈希 的 实现||
+|[pi_dirty](https://github.com/GaiaWorld/pi_dirty)|wzjsun(suncy)|可以设置脏，查询脏的容器|目前主要用于 pi_ecs|
+|`性能不高，有待优化` [pi_static_map](https://github.com/GaiaWorld/pi_static_map)|zmax|完美静态哈希 的 实现||
 
 ### 1.2. 客户端
 
@@ -84,6 +83,7 @@
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
+|[pi_ucd](https://github.com/GaiaWorld/pi_ucd)|wzjsun(suncy)|unicode快速查询的函数|比如可以查询某个point是不是中文
 |[pi_crypto](https://github.com/GaiaWorld/pi_crypto)|zuon|加密解密 & 数据签名|没推到 crates.io|
 |[pi_vm](https://github.com/GaiaWorld/pi_vm)|zuon|JavaScript引擎，v8虚拟机的rust封装|没推到 crates.io|
 |[pi_store](https://github.com/GaiaWorld/pi_store)|zuon|基于日志的数据存储|没推到 crates.io|
