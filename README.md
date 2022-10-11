@@ -28,6 +28,7 @@
 
 |std库的？|用下面的？代替|说明|
 |--|--|--|
+|wgpu::*|pi_render::rhi::*|如果有，优先用 pi_render的|
 |（随机数库，非 std）rand::*|pi_wy_rng||
 |HashMap|pi_hash::`XHashMap`||
 |HashSet|pi_hash::`XHashSet`||
