@@ -34,7 +34,7 @@
 |`Heap`|`pi_heap_ext`|`Heap`||
 |`Deque`|`pi_slot_deque`||
 |`Rc` / `Arc`|`pi_share::Share`||
-|rc::Weak / arc::Weak|`pi_share::ShareWeak`|
+|rc::`Weak` / arc::`Weak|`pi_share::ShareWeak`|
 |Mutex|`pi_share::ShareMutex`|
 |RwLock|`pi_share::ShareRwLock`|
 |UnsafeCell|`pi_share::AtomicPtr`|
