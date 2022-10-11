@@ -28,18 +28,20 @@
 
 |std库的？|用下面的？代替|说明|
 |--|--|--|
-|`HashMap`|`pi_hash::XHashMap`||
-|`HashSet`|`pi_hash::XHashSet`||
-|`rand::*`|`pi_wy_rng`||
-|`Heap`|`pi_heap_ext`|`Heap`||
-|`Deque`|`pi_slot_deque`||
-|`Rc` / `Arc`|`pi_share::Share`||
-|rc/arc::`Weak`|`pi_share::ShareWeak`|
-|Mutex|`pi_share::ShareMutex`|
-|RwLock|`pi_share::ShareRwLock`|
-|UnsafeCell|`pi_share::AtomicPtr`|
-|AtomicBool/AtomicU8/AtomicUsize|`pi_share::ShareBool/ShareU8/ShareUsize/`|
-|Arc(TrustCell < T >)|`pi_share::ShareRefCell`|
+|HashMap|pi_hash::`XHashMap`||
+|HashSet|pi_hash::`XHashSet`||
+|rand::*|pi_wy_rng||
+|Heap|pi_heap_ext|||
+|Deque|pi_slot_deque||
+|`Send`|pi_share::`ThreadSend`|
+|`Send + Sync`|pi_share::`ThreadSync`|
+|Rc / Arc|pi_share::Share||
+|RefCell / TrustCell|pi_share::ShareCell||
+|Rc< RefCell > / Arc < TrustCell >)|pi_share::ShareRefCell|
+|rc/arc::Weak|pi_share::ShareWeak|
+|Mutex|pi_share::ShareMutex|
+|RwLock|pi_share::ShareRwLock|
+|AtomicBool / AtomicU8 / AtomicUsize / AtomicPtr|pi_share::ShareBool/ShareU8/ShareUsize/SharePtr|
 
 #### 1.1.1. 库 信息表
 
