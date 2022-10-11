@@ -54,12 +54,12 @@
 |[pi_slot_deque](https://github.com/GaiaWorld/pi_slot_deque)|wzjsun(suncy)|基于 slot-map 的 双端队列||
 |[pi_slot_wheel](https://github.com/GaiaWorld/pi_slot_wheel)|wzjsun(suncy)|基于 slot-map 的 定时轮||
 |[pi_weight](https://github.com/GaiaWorld/pi_weight)|wzjsun(suncy)|基于 slot-map 的 权重树 用于存储带权重值的内容||
-|[pi_util](https://github.com/GaiaWorld/pi_util)|wzjsun(suncy)|实用库：放一些实用函数和结构体||
 |[pi_cowlist](https://github.com/GaiaWorld/pi_cowlist)|wzjsun(suncy)|写时复制的链表||
 |[pi_sinfo](https://github.com/GaiaWorld/pi_sinfo)|wzjsun(suncy)|用于描述 struct 的 元信息|和 bon 结合使用|
 |[pi_bon](https://github.com/GaiaWorld/pi_bon)|wzjsun(suncy)|序列化和反序列的库|`尽量用serd`|
 |[pi_lru](https://github.com/GaiaWorld/pi_lru)|wzjsun(suncy)|LRU缓存算法||
 |[pi_dirty](https://github.com/GaiaWorld/pi_dirty)|wzjsun(suncy)|可以设置脏，查询脏的容器|目前主要用于 pi_ecs|
+|[pi_util](https://github.com/GaiaWorld/pi_util)|wzjsun(suncy)|实用库：放一些实用函数和结构体||
 |`性能不高，有待优化` [pi_static_map](https://github.com/GaiaWorld/pi_static_map)|zmax|完美静态哈希 的 实现||
 
 ### 1.2. 客户端
