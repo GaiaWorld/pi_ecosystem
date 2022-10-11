@@ -76,7 +76,7 @@
 |[pi_3d](https://github.com/GaiaWorld/pi_3d)|baip|3D渲染相关|
 |[pi_3d_loader](https://github.com/GaiaWorld/pi_3d_loader)|baip|3D加载，比如 gltf|
 |[pi_spine_rs](https://github.com/GaiaWorld/pi_spine_rs)|baip|Spine的Rust渲染|
-|[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|基于WebGPU的Rust库（wgpu-rs）实现的，以 渲染图 为基础的 渲染基础库，供 ui-render, pi_scene 使用|
+|[pi_render](https://github.com/GaiaWorld/pi_render)|moyy|渲染相关|rhi封装/渲染图/geometry/material/shader编译/|
 |[pi_path_finding](https://github.com/GaiaWorld/pi_path_finding)|moyy|A* 寻路算法||
 
 ### 1.3. 服务器端
