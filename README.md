@@ -77,7 +77,8 @@
 |[pi_spatialtree](https://github.com/GaiaWorld/pi_spatialtree)|zmax|空间搜索树，主要是：四叉树、八叉树 实现||
 |[pi_ecs](https://github.com/GaiaWorld/pi_ecs)|wzjsun(suncy)|类似 Bevy 的 ECS（Entity-Component-System）库|处理客户端数据存和流程的基本框架，可以轻松写并发代码||
 |[pi_ui_render](https://github.com/GaiaWorld/pi_ui_render)|wzjsun(suncy)|浏览器 DOM + CSS 子集 的 Rust 实现，基于ECS|包括：Flex和绝对定位布局，动画，深度，效果，变换，滚动，渲染等功能||
-|[pi_scene](https://github.com/GaiaWorld/pi_scene)|baip|（正在开发）以 Babylon.js/Unity为参考的3D游戏场景渲染||
+|[pi_svg](https://github.com/GaiaWorld/pi_svg)|moyy|基于 pathfinder3 的 svg 实现||
+|[pi_scene](https://github.com/GaiaWorld/pi_scene)|baip|（正在开发）3D游戏场景渲染||
 |[pi_curves](https://github.com/GaiaWorld/pi_curves)|baip|曲线模块|包括：缓动曲线，Hermite曲线，贝塞尔曲线 等的计算|
 |[pi_animation](http://github.com/GaiaWorld/pi_animation)|baip|动画模块|包括：动画，动画组控制，动画融合 等共鞥你|
 |[pi_3d](https://github.com/GaiaWorld/pi_3d)|baip|3D渲染相关|
