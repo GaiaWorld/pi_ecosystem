@@ -173,6 +173,7 @@
 
 |链接|维护者|概述|说明|
 |--|--|--|--|
+|[node_images](https://github.com/GaiaWorld/node-images)|moyy|pi_build 构建图片 需要 原始拷贝|添加了 CopyFromImage2 接口||
 |[rusty_v8](http://192.168.31.241:10082/tech/rusty_v8)|zhuyijiang(zhuy)|v8库的rust封装|之所以自己维护，是为了构建iOS平台，以及 解决 Android 平台的构建错误|
 |[winit](http://192.168.31.241:10082/tech/winit)|zhuyijiang(zhuy)|跨平台的窗口和事件提供|Android 添加虚拟键盘唤起和隐藏； exe添加自定义光标，iOS适配数据缓存，绕过某些接口必须在主线程上调用||
 |[minstant](http://192.168.31.241:10082/tech/minstant)|zhuyijiang(zhuy)|获取时间|适配iOS无法编译问题|
